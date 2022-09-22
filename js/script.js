@@ -10,6 +10,7 @@ btn.onclick = function(){
       console.log(writeHijri(new Date(year,manth-1,day), 'ar'));
     } 
     document.getElementById('result').innerHTML = text;
+
 }
 function writeHijri(date, lang) {
     var date = date || new Date();
@@ -21,3 +22,5 @@ function writeHijri(date, lang) {
     return date.toLocaleString(lang + '-u-ca-islamic', options);
 }
 
+// إجراء تغييرات بحيث إذا تغير اي قيمة من قيم ال input يتم تغير النتيجة
+//عند تحميل الصفحة تكون هناك قيمة التاريخ الحالي
