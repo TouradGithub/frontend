@@ -2,9 +2,9 @@ let text;
 
 let btn = document.querySelector('button');
 btn.onclick = function(){
-    let day = document.getElementById('day').value;
-    let manth = document.getElementById('manth').value;
-    let year = document.getElementById('year').value;
+    let day = document.getElementById('dayM').value;
+    let manth = document.getElementById('manthM').value;
+    let year = document.getElementById('yearM').value;
     if(day==""||manth==""||year==""){
     }else{
       console.log(writeHijri(new Date(year,manth-1,day), 'ar'));
