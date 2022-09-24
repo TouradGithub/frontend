@@ -1,88 +1,89 @@
 /* نريد تصميم جديد  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;700&display=swap');
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
-  height: 100vh;
-  font-family: "Roboto Mono", monospace;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-direction: column;
-  background-image: url("/img/background.jpeg");
-  background-size: cover;
+    height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    background-image: url(../img/pexels-marko-klaric-6408282.jpg);
+    background-size: cover;
 }
 .container {
-  max-width: 600px;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 10px auto;
-  box-shadow: 5px 5px 20px;
-  background-color: #ddd;
-  display: flex;
-  flex-direction: column;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px auto;
+    box-shadow: 5px 5px 20px;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
 }
 h1 {
-  margin-bottom: 30px;
-  font-style: oblique;
-  font-weight: bold;
-  background-color: #ddd;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 20px;
+    margin-bottom: 30px;
+    font-style: oblique;
+    font-weight: bold;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px;
+
 }
 /* small */
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+    .container {
+        width: 750px;
+    }
 }
-/* medium */
+  /* medium */
 @media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
+    .container {
+        width: 970px;
+    }
 }
-/* large */
+  /* large */
 @media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+    .container {
+        width: 1170px;
+    }
 }
 @media (max-width: 767px) {
-  h1 {
-    font-size: 17px;
-  }
+    h1 {
+        font-size: 17px;
+    }
 }
 .container .date_miladi,
 .container .date_hijri {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 10px;
-  justify-content: center;
-  margin: 40px auto;
-  font-size: 20px;
-  font-weight: bold;
-  width: 400px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    margin: 40px auto;
+    font-size: 20px;
+    font-weight: bold;
+    width: 400px;
 }
 .container .date_miladi::before,
 .container .date_hijri::before {
-  content: "التاريخ الميلادي";
-  font-size: 22px;
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    content: "التاريخ الميلادي";
+    font-size: 22px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .container .date_hijri::before {
-  content: "التاريخ الهجري";
+    content: "التاريخ الهجري";
 }
 #dayM,
 #manthM,
@@ -90,22 +91,26 @@ h1 {
 #dayH,
 #manthH,
 #yearH {
-  text-align: center;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  margin: 5px;
-  padding: 5px;
-  font-size: 20px;
-}
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+} 
 .container :last-child {
-  background-color: #fff;
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 20px;
-  letter-spacing: 3px;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 3px;
 }
+
+
+
+
 
 /* 
 .back {
