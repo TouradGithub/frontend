@@ -15,5 +15,6 @@ function loadImage(event) {
 function downloadPdf() {
   let doc = new jsPDF();
   doc.addImage(newImg, 10, 10);
-  doc.save("image_to_pdf.pdf");
+  const date = new Date();
+  doc.save("image_to_pdf" + date.getTime() + ".pdf");
 }
