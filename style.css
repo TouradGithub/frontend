@@ -46,7 +46,6 @@ body {
 }
 h1 {
   margin-bottom: 20px;
-  font-size: 25px;
 }
 .container {
   display: flex;
@@ -55,8 +54,8 @@ h1 {
   padding: 20px;
   border-radius: 20px;
 }
-.container :nth-child(2),
-.container :nth-child(3) {
+.container :nth-child(1),
+.container :nth-child(2) {
   margin-bottom: 20px;
   text-align: center;
   padding: 5px;
