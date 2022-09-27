@@ -4,19 +4,1004 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>calc tacses</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <title>calc time</title>
   </head>
   <body>
-    <video autoplay loop muted plays-inline class="back">
-      <source src="media/video.mp4" type="video/mp4" />
-    </video>
-          <h1>حساب قيمة الضريبة المضافة</h1>
+    <h1>حساب الوقت بين تاريخين</h1>
     <div class="container">
-      <input type="numper" id="a" placeholder="المبلغ" />
-      <input type="numper" id="b" placeholder="نسبة الضريبة" />
-      <div class="result"></div>
+      <div class="start-date">
+        <div class="bullet"></div>
+        <input type="number" id="year-S" placeholder="السنة" />
+        <input type="number" id="manth-S" placeholder="الشهر" />
+        <input type="number" id="day-S" placeholder="اليوم" />
+        <input type="number" id="Hour-S" placeholder="الساعة" />
+        <input type="number" id="minit-S" placeholder="الدقيقة" />
+        <input type="number" id="sec-S" placeholder="الثانية" />
+      </div>
+      <div class="end-date">
+        <div class="bullet"></div>
+        <input type="number" id="year-E" placeholder="السنة" />
+        <input type="number" id="manth-E" placeholder="الشهر" />
+        <input type="number" id="day-E" placeholder="اليوم " />
+        <input type="number" id="Hour-E" placeholder="الساعة" />
+        <input type="number" id="minit-E" placeholder="الدقيقة" />
+        <input type="number" id="sec-E" placeholder="الثانية" />
+      </div>
+      <div>
+        <div class="result">
+          <div class="year"></div>
+          <div class="month"></div>
+          <div class="day"></div>
+          <div class="houer"></div>
+          <div class="minit"></div>
+          <div class="sec"></div>
+        </div>
+      </div>
     </div>
-    <script src="script.js"></script>
+    <section>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-solid fa-hourglass-start"></i>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-stopwatch"></i>
+          <i class="fa-solid fa-hourglass-half"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-regular fa-face-tired"></i>
+          <i class="fa-solid fa-user-tie"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-solid fa-face-flushed"></i>
+          <i class="fa-regular fa-calendar-days"></i>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="fa-solid fa-calendar-check"></i>
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <i class="fa-solid fa-clock"></i>
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-calendar-xmark"></i>
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
