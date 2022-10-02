@@ -4,31 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calculator</title>
   </head>
   <body>
     <div class="container">
-      <div class="output-1">15+15</div>
-      <div class="output-2">30</div>
-      <button>C</button>
-      <button>CE</button>
-      <button>%</button>
-      <button>/</button>
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button>x</button>
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button>-</button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>+</button>
-      <button>0</button>
-      <button>=</button>
+      <div data-previous-operand class="output-1"></div>
+      <div data-current-operand class="output-2"></div>
+      <button data-all-clear>C</button>
+      <button data-delete>CE</button>
+      <button data-operation>%</button>
+      <button data-operation>/</button>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operation>*</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation>-</button>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operation>+</button>
+      <button data-number>0</button>
+      <button data-equals>=</button>
     </div>
   </body>
 </html>
