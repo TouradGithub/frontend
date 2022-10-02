@@ -4,19 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>calc tacses</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <title></title>
   </head>
   <body>
-    <video autoplay loop muted plays-inline class="back">
-      <source src="media/video.mp4" type="video/mp4" />
-    </video>
+    <h1>تحويل وحدات الطول</h1>
     <div class="container">
-      <h1>حساب قيمة الضريبة المضافة</h1>
-      <input type="numper" id="a" placeholder="المبلغ" />
-      <input type="numper" id="b" placeholder="نسبة الضريبة" />
-      <div class="result"></div>
+      <div class="select-box">
+        <select name="s-1" id="">
+          <option value="m">متر</option>
+          <option value="cm">سم</option>
+          <option selected value="km">كم</option>
+          <option value="foot">قدم</option>
+          <option value="arm">ذراع</option>
+        </select>
+        <select name="s-2" id="">
+          <option value="m">متر</option>
+          <option value="cm">سم</option>
+          <option value="km">كم</option>
+          <option value="foot">قدم</option>
+          <option value="arm">ذراع</option>
+        </select>
+      </div>
+      <input type="number" value="1" />
+      <div class="result">km 1 = m 1000</div>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
